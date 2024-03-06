@@ -1,0 +1,26 @@
+array = [0][0]
+
+
+              key              value
+ Object { "000001_0.jpg": "000010_0.jpg", "FD1.jpg": "FD1.jpg" }
+
+
+ array =[                      
+       [  0010.jpg, FD1.jpg ]
+ ]
+
+ frontend => post req => backend 
+
+ backend => cut url => /upload + /folderName +/image name => make array 
+ array [
+      /upload 
+      /upload
+      [
+            folderName
+      ]
+      [
+            image name 
+      ]
+ ]
+ => frontend 
+ => append to a div dynamically 

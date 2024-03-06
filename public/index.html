@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>Demo of Tryitfirst</title>
+  </head>
+
+  <body>
+    <form
+      action="/upload/allFiles"
+      method="post"
+      id="form"
+      enctype="multipart/form-data"
+    >
+      <div class="Main">
+        <div class="child">
+          <h2>Model Images Folder</h2>
+          <input
+            type="file"
+            name="ModelImage"
+            webkitdirectory
+            mozdirectory
+            multiple
+            directory
+          />
+        </div>
+        <div class="child">
+          <h2>Cloth Images Folder</h2>
+          <input
+            type="file"
+            name="Clothimage"
+            webkitdirectory
+            mozdirectory
+            multiple
+            directory
+          />
+        </div>
+        <div class="child">
+          <h2>Result Images Folder</h2>
+          <input
+            type="file"
+            name="Resultimage"
+            webkitdirectory
+            mozdirectory
+            multiple
+            directory
+          />
+        </div>
+        <div class="child">
+          <h2>CSV File</h2>
+          <input type="file" name="csvFile" id="fileInput" accept=".csv" />
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button type="submit">Display Images</button>
+      </div>
+    </form>
+
+    <hr />
+
+    <div id="image-container"></div>
+
+    <!-- <div class="button-container">
+      <button id="Prev">Prev</button>
+      <button id="page">0</button>
+      <button id="Next">Next</button>
+    </div> -->
+    <div class="button-container" id="pagination-container"></div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
